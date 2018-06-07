@@ -1,9 +1,13 @@
+*{
+	box-sizing:border-box;
+}
 body{
 	margin:0;
 }
 .container{
 	width:1024px;
 	margin:0 auto;
+	position: relative;
 }
 .header-box{
 	height:575px;
@@ -34,13 +38,14 @@ body{
 	margin-bottom: 10px;
 	font-size: 20;
 	font-weight: 900;
+	letter-spacing: 3px;
 }
 .text2{
 	width:500px;
 	line-height: 50px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 42px;
 	letter-spacing:5px;
 }
 .text3{
@@ -52,8 +57,8 @@ body{
 }
 .button{
 	display: block;
-	width:180px;
-	line-height: 50px;
+	width:246px;
+	line-height: 24px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 	padding:10px 40px;
@@ -73,8 +78,8 @@ body{
 
 }
 .product-box{
-	width:573px;
-	height:306px;
+	width:705px;
+	height:353px;
 	margin: 0 auto;
 	position: relative;
 	margin-top: 136px;
@@ -82,8 +87,8 @@ body{
 
 }
 .product-item1{
-	width:191px;
-	height:286px;
+	width:235px;
+	height:353px;
 	background: url(item1.jpg);
 	background-repeat: no-repeat;
 	float:left;
@@ -91,16 +96,16 @@ body{
 
 }
 .product-item2{
-	width:191px;
-	height:286px;
+	width:235px;
+	height:353px;
 	background: url(item2.jpg);
 	float:left;
 	background-size: 100% auto;
 
 }
 .product-item3{
-	width:191px;
-	height:286px;
+	width:235px;
+	height:353px;
 	background: url(item3.jpg);
 	float:left;
 	background-size: 100% auto;
@@ -110,4 +115,215 @@ body{
 	color:white;
 	margin-left: 20px;
 
+}
+.head-menu{
+	width:1024px;
+	height:57px;
+	padding-left: 22px;
+	padding-right: 22px;
+	text-align: center;;
+	display: flex;
+	justify-content:space-between;
+	position:absolute;
+	z-index: 2000;
+
+}
+.left{
+	width:150px;
+	height: 100%;
+/*	background: red;*/
+	font-size: 10px;
+	position: relative;
+}
+.left-left{
+	width: 28px;
+	height: 18px;
+	position: absolute;
+	left:3px;
+	top:20px;
+}
+.left-right{
+	width: 28px;
+	height: 18px;
+	position: absolute;
+	left:43px;
+	top:22px;
+}
+.center{
+	width:215px;
+	height: 100%;
+	line-height: 57px;
+	color: white;
+	letter-spacing:4px;
+	font-size: 17px;
+	font-weight: 900;
+}
+.button2{
+	color: white;
+	text-decoration: none;
+}
+.right{
+	width:150px;
+	height: 100%;
+	/*background: green;*/
+	font-size: 10px;
+	position: relative;
+}
+.right-left{
+	width: 28px;
+	height: 18px;
+	position: absolute;
+	right :43px;
+	top:22px;
+}
+.right-right{
+	width: 28px;
+	height: 18px;
+	position: absolute;
+	right:3px;
+	top:18px;
+}
+.title-box{
+	text-align: center;
+	padding-top: 90px;
+	height:318px;
+}
+.title-box h6{
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	line-height: 13px;
+	margin: 12px 0 18px 0;
+}
+.title-box h2{
+	font-size: 50px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	line-height: 60px;
+	margin: 25px 0 40px 0;
+}
+.product-list{
+	margin:0 auto;
+	width: 705px;
+	display: flex;
+	flex-wrap:wrap;
+}
+.product:nth-child(1){
+	width: 235px;
+	height: 155px;
+	border: 1px black solid;
+	background: url(beosound-shape-mobile.jpg);
+	background-size: 100%;
+}
+.product:nth-child(2){
+	width: 235px;
+	height: 155px;
+	border: 1px black solid;
+	background: url(beovision-eclipse-mobile.jpg);
+	background-size: 100%;
+}
+.product:nth-child(3){
+	width: 235px;
+	height: 155px;
+	background: url(beolab-50-mobile.jpg);
+	background-size: 100%;
+}
+.product:nth-child(4){
+	width: 235px;
+	height: 155px;
+	border: 1px black solid;
+	background: url(beoplay-h9i-mobile.jpg);
+	background-size: 100%;
+}
+.product:nth-child(5){
+	width: 235px;
+	height: 155px;
+	border: 1px black solid;
+	background: url(beoplay-p6-categories-mobile-2.jpg);
+	background-size: 100%;
+}
+.product:nth-child(6){
+	width: 235px;
+	height: 155px;
+	border: 1px black solid;
+	background: url(beosound-core-mobile.jpg);
+	background-size: 100%;
+}
+.title1{
+	color: white;
+    	font-size: 11px;
+    	font-weight: 400;
+    	letter-spacing: 2px;
+    	line-height: 18px;
+    	margin-bottom: 4px;
+    	margin-left: 10px;
+}
+.story-list{
+	margin:0 auto;
+	width: 705px;
+	display: flex;
+	flex-wrap:wrap;
+}
+.story:nth-child(1){
+	width: 178px;
+	height: 170px;
+	/*border: 1px black solid;*/
+	background: url(design-as-a-group-effort-01.jpg);
+	background-size: 100%;
+}
+.story:nth-child(2){
+	width: 178px;
+	height: 170px;
+	/*border: 1px black solid;*/
+	background: url(the-krane.jpg);
+	background-size: 100%;
+}
+.story:nth-child(3){
+	width: 349px;
+	height: 170px;
+	/*border: 1px black solid;*/
+	background: url(harmonies-story.jpg);
+	background-size: 100%;
+}
+.story:nth-child(4){
+	width: 178px;
+	height: 194px;
+	/*border: 1px black solid;*/
+
+}
+.story:nth-child(5){
+	width: 178px;
+	height: 194px;
+	/*border: 1px black solid;*/
+
+}
+.story:nth-child(6){
+	width: 349px;
+	height: 194px;
+	/*border: 1px black solid;*/
+}
+.story-text{
+	width: 167px;
+	height: 105px;
+	margin-top: 30px;
+    	padding-right: 5%;
+    	/*background: red;
+*/}
+.story-text h5{
+	font-size: 1em;
+    	margin: 0 0 1.5em;
+}
+.story-textcription{
+	opacity: .6;
+    	font-size: 13px;
+   	font-weight: 300;
+     	line-height: 21px;
+    	font-family: "Gotham SSm A","Gotham SSm B";
+}
+.story-text2{
+	width: 335px;
+	height: 105px;
+	margin-top: 30px;
+    	padding-right: 5%;
+    	/*background: red;*/
 }
